@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 50px;
   font-family: "Space Mono", Arial, serif;
