@@ -5,18 +5,58 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*
-* ======================================================= */
+
 body {
+  padding-top: 50px;
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #4d4d4d;
   background: #fff;
+}
+/* Default styles for navbar */
+.navbar {
+  background-color: #ebeaea; /* Background color of navbar */
+  border-bottom: 1px solid #FF9000; /* Border at the bottom of navbar */
+}
+
+/* Remove default list styles */
+.navbar-nav {
+  list-style-type: none;
+  padding: 30;
+  margin: 0;
+  text-align: center; /* Center align the list items */
+}
+
+/* Display list items inline */
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 45px; /* Adjust spacing between items */
+  margin-top: 5px
+}
+
+/* Style anchor tags */
+.navbar-nav li a {
+  text-decoration: none;
+  color: #ffffff; /* Set your desired text color */
+  padding: 10px 15px; /* Add padding to the anchor tags */
+  display: block; /* Ensure anchor tags take full width of parent li */
+}
+
+/* Optional: Hover effect on anchor tags */
+.navbar-nav li a:hover {
+  background-color: #e9ecef; /* Change background color on hover */
+}
+
+/* Media query to hide navbar on phones and smaller devices */
+@media (max-width: 768px) {
+  .navbar {
+      display: none; /* Hide the navbar */
+  }
+  body {
+    padding-top: 0px;
+  }
 }
 
 #page {
