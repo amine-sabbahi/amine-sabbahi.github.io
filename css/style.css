@@ -23,12 +23,13 @@ body {
 .navbar {
   background-color: #ebeaea; /* Background color of navbar */
   border-bottom: 1px solid #FF9000; /* Border at the bottom of navbar */
+  padding: 10px 0; /* Add padding for better spacing */
 }
 
 /* Remove default list styles */
 .navbar-nav {
   list-style-type: none;
-  padding: 30;
+  padding: 0;
   margin: 0;
   text-align: center; /* Center align the list items */
 }
@@ -37,7 +38,7 @@ body {
 .navbar-nav li {
   display: inline-block;
   margin-left: 45px; /* Adjust spacing between items */
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 /* Style anchor tags */
@@ -53,15 +54,52 @@ body {
   background-color: #e9ecef; /* Change background color on hover */
 }
 
-/* Media query to hide navbar on phones and smaller devices */
+/* Styles for the hamburger menu */
+.navbar-toggle {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #ffffff; /* Color of the bars */
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-  .navbar {
-      display: none; /* Hide the navbar */
+  .navbar-header {
+    float: none;
   }
-  body {
-    padding-top: 0px;
+
+  .navbar-toggle {
+    display: block;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .collapse {
+    clear: both;
+  }
+
+  .collapse.in {
+    display: block !important;
+  }
+
+  .navbar-nav li {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-nav li a {
+    padding: 10px 15px;
+    text-align: center;
   }
 }
+
 
 #page {
   position: relative;
