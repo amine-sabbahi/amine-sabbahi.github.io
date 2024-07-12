@@ -6,7 +6,7 @@ Welcome to my portfolio! This project showcases my skills and projects in web de
 
 ## Live view
 
-You can view the live portfolio <a href="https://amine-sabbahi.github.io" target="_blank">here</a>.
+You can view the live portfolio <a href="https://amine-sabbahi.github.io/portfolio" target="_blank">here</a>.
 
 ## Features
 
