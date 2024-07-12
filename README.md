@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! This project showcases my skills and projects in web development using HTML, CSS, JavaScript, jQuery, and Bootstrap.
 
-![main](src/main.png)
+![main](portfolio/src/main.png)
 
 ## Live view
 
